@@ -13,7 +13,7 @@ export const PersonalInfo = () => {
   };
 
   return (
-    <div className="relative bg-zinc-700 rounded-xl p-4 mb-5 lg:sticky">
+    <div className="relative bg-zinc-700 rounded-xl p-4 mb-5 lg:sticky lg:top-60">
       <div
         onClick={toggleModal}
         className="absolute top-0 right-0 text-5xl bg-zinc-600 rounded-l-xl hover:cursor-pointer"
@@ -43,8 +43,8 @@ export const PersonalInfo = () => {
         </div>
       </div>
 
-      <div className="hidden lg:block mt-4 border-t border-t-zinc-500 pt-4 lg:pt-8">
-        <ul className="flex flex-col gap-4 lg:text-lg lg:gap-6">
+      <div className="hidden lg:block mt-8 border-t border-t-zinc-500 pt-4 lg:pt-8">
+        <ul className="flex flex-col gap-4 lg:gap-6">
           <li className="flex items-center gap-4">
             <div className=" bg-zinc-600 shadow-lg p-2 rounded-xl shadow-zinc-600/50">
               <FaVoicemail className="text-2xl text-indigo-500 " />
