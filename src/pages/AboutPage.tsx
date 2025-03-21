@@ -7,7 +7,7 @@ import { Technologies } from "../components/Technologies";
 
 const currentActivities: Activity[] = [
   {
-    name: "Web Design",
+    name: "Software Development",
     icon: dev,
     content:
       "I build modern, responsive, and user-friendly web interfaces using React.js, TypeScript, and Tailwind CSS.",
@@ -28,7 +28,7 @@ const currentActivities: Activity[] = [
 
 const AboutPage = () => {
   return (
-    <div className="bg-zinc-700 rounded-lg px-4 py-6">
+    <div className="bg-zinc-700 rounded-lg px-4 py-6 overflow-hidden">
       <h1 className="text-3xl font-bold relative pb-3">
         About Me
         <span className="absolute bottom-0 left-0 w-[10%] border-b-8 border-b-indigo-500"></span>
@@ -57,14 +57,19 @@ const AboutPage = () => {
           <span className="absolute bottom-0 left-0 w-[10%] border-b-8 border-b-indigo-500"></span>
         </h2>
 
-        <div className="flex flex-col gap-5 mt-6">
+        <div className="flex flex-col lg:grid grid-cols-2 gap-5 mt-6">
           {currentActivities.map((activity) => (
             <SkillsCard key={activity.name} activity={activity} />
           ))}
         </div>
       </div>
-
-      <Technologies />
+      <div className="mt-6">
+        <h2 className="text-3xl font-bold relative pb-3 my-4">
+          Technologies that I use
+          <span className="absolute bottom-0 left-0 w-[10%] border-b-8 border-b-indigo-500"></span>
+        </h2>
+        <Technologies />
+      </div>
     </div>
   );
 };

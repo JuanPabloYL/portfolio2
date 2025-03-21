@@ -6,7 +6,7 @@ import { PersonalInfo } from "../components/PersonalInfo";
 export const Navigation = () => {
   return (
     <BrowserRouter>
-      <div className="bg-zinc-800 text-white">
+      <div className="bg-zinc-800 text-white pb-12 lg:pb-10">
         <div className="max-w-[120rem] w-[95%] sm:w-[85%] pt-5 lg:pt-12 mx-auto lg:flex gap-4 h-full">
           <MobileNav />
           <PersonalInfo />

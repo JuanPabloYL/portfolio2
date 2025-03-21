@@ -1,5 +1,5 @@
 import { FiChevronDown } from "react-icons/fi";
-import userIcon from "../assets/img/user.jpg";
+import userIcon from "../assets/img/user.png";
 import { LuGithub } from "react-icons/lu";
 import { FaLinkedinIn, FaVoicemail } from "react-icons/fa";
 import { MdLocationPin } from "react-icons/md";
@@ -13,7 +13,7 @@ export const PersonalInfo = () => {
   };
 
   return (
-    <div className="relative bg-zinc-700 rounded-xl p-4 mb-5 lg:sticky lg:top-60">
+    <div className="relative bg-zinc-700 rounded-xl p-4 mb-5 lg:mb-0 lg:sticky h-fit top-10 lg:h-[42rem]">
       <div
         onClick={toggleModal}
         className="absolute top-0 right-0 text-5xl bg-zinc-600 rounded-l-xl hover:cursor-pointer"
