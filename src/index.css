@@ -17,3 +17,13 @@
 .group:hover .animate-scroll {
   animation-play-state: paused;
 }
+
+/* @theme {
+  --font-poppins: "Poppins", sans-serif;
+} */
+
+@layer base {
+  body {
+    @apply font-poppins;
+  }
+}
