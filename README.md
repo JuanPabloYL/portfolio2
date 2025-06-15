@@ -4,7 +4,7 @@ This is my personal developer portfolio website built with **React** and **Tailw
 
 ## 🚀 Live Site
 
-🌐 [juanpabloyague](https://juanpabloyague.netlify.app/about)  
+🌐 [juanpabloyague](https://juanpabloyague.netlify.app)  
 
 ---
 
