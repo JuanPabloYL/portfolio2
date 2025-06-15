@@ -11,7 +11,7 @@ interface Route {
 
 const LazyAbout = lazy(() => import("../pages/AboutPage"));
 const LazyResume = lazy(() => import("../pages/ResumePage"));
-const LazyPortfolio = lazy(() => import("../pages/PortfolioPage"));
+const LazyProjecs = lazy(() => import("../pages/ProjectsPage"));
 const LazyContact = lazy(() => import("../pages/ContactPage"));
 
 export const routes: Route[] = [
@@ -28,14 +28,14 @@ export const routes: Route[] = [
     name: "resume",
   },
   {
-    to: "/portfolio",
-    path: "/portfolio",
-    Component: LazyPortfolio,
-    name: "portfolio",
+    to: "/projects",
+    path: "/projects",
+    Component: LazyProjecs,
+    name: "projects",
   },
   {
     to: "/Contact",
-    path: "/Contact",
+    path: "/contact",
     Component: LazyContact,
     name: "Contact",
   },

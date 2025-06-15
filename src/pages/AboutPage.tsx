@@ -4,8 +4,7 @@ import desing from "../assets/img/icon-design.svg";
 import app from "../assets/img/icon-app.svg";
 import { SkillsCard } from "../components/SkillsCard";
 import { Technologies } from "../components/Technologies";
-import { NavLink } from "react-router-dom";
-import { routes } from "../routes/routes";
+import { Container } from "../components/Container";
 
 const currentActivities: Activity[] = [
   {
@@ -30,22 +29,7 @@ const currentActivities: Activity[] = [
 
 const AboutPage = () => {
   return (
-    <div className="bg-zinc-700 rounded-lg px-4 py-6 overflow-hidden relative">
-      <nav className="absolute right-0 py-5 top-0 flex gap-5 px-10 bg-zinc-600 rounded-b-lg">
-        {routes.map(({ to, name }) => (
-          <NavLink
-            className={({ isActive }) =>
-              `text-gray-100 capitalize ${
-                isActive ? "text-indigo-400" : ""
-              } z-10`
-            }
-            key={to}
-            to={to}
-          >
-            {name}
-          </NavLink>
-        ))}
-      </nav>
+    <Container>
       <h1 className="text-3xl font-bold relative pb-3">
         About Me
         <span className="absolute bottom-0 left-0 w-[10%] border-b-8 border-b-indigo-500"></span>
@@ -70,7 +54,7 @@ const AboutPage = () => {
 
       <div className="mt-10">
         <h2 className="text-3xl font-bold relative pb-3 my-4">
-          What I am doing?
+          What am I doing?
           <span className="absolute bottom-0 left-0 w-[10%] border-b-8 border-b-indigo-500"></span>
         </h2>
 
@@ -87,7 +71,7 @@ const AboutPage = () => {
         </h2>
         <Technologies />
       </div>
-    </div>
+    </Container>
   );
 };
 

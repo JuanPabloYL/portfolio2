@@ -21,7 +21,7 @@ export const Technologies = () => {
               key={`first-${index}`}
               src={logo}
               alt="Brand"
-              className="h-16 w-auto mx-4"
+              className="h-16 w-auto mx-4 filter invert"
             />
           ))}
         </div>
@@ -34,7 +34,7 @@ export const Technologies = () => {
               key={`second-${index}`}
               src={logo}
               alt="Brand"
-              className="h-16 w-auto mx-4"
+              className="h-16 w-auto mx-4 filter invert"
             />
           ))}
         </div>

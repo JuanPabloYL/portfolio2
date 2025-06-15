@@ -29,7 +29,7 @@ export const PersonalInfo = () => {
       </div>
       <div className="flex gap-4 items-center lg:flex-col lg:pb-5">
         <img
-          className="w-20 h-20 rounded-xl lg:w-40 lg:h-40"
+          className="w-20 h-20 rounded-[50%] lg:w-40 lg:h-40 object-cover"
           src={userIcon}
           alt="User picture"
         />

@@ -21,9 +21,12 @@
 /* @theme {
   --font-poppins: "Poppins", sans-serif;
 } */
-
 @layer base {
   body {
-    @apply font-poppins;
+    /* @apply font-poppins; */
   }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
 }
