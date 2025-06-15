@@ -2,6 +2,7 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { MobileNav } from "../components/MobileNav";
 import { routes } from "./routes";
 import { PersonalInfo } from "../components/PersonalInfo";
+import ThankYouPage from "../pages/ThankYouPage";
 
 export const Navigation = () => {
   return (
@@ -16,6 +17,7 @@ export const Navigation = () => {
               <Route path={path} element={<Component />} key={to} />
             ))}
             <Route path="/*" element={<Navigate to={routes[0].to} />} />
+            <Route path="/thanks" element={<ThankYouPage />} />
           </Routes>
         </div>
       </div>

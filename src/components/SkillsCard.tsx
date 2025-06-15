@@ -1,7 +1,9 @@
 type SkillsCardProps = {
-  name: string;
-  icon: string;
-  content: string;
+  activity: {
+    name: string;
+    icon: string;
+    content: string;
+  };
 };
 
 export const SkillsCard = ({ activity }: SkillsCardProps) => {

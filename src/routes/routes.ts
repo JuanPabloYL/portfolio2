@@ -34,7 +34,7 @@ export const routes: Route[] = [
     name: "projects",
   },
   {
-    to: "/Contact",
+    to: "/contact",
     path: "/contact",
     Component: LazyContact,
     name: "Contact",
