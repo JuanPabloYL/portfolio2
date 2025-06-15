@@ -33,7 +33,7 @@ const ProjectsPage = () => {
         <span className="absolute bottom-0 left-0 w-[10%] border-b-8 border-b-indigo-500"></span>
       </h1>
 
-      <section className="flex flex-col md:flex-row justify-between mt-10 items-center gap-4">
+      <section className="flex flex-col md:flex-row justify-between mt-10 items-center gap-4 md:grid grid-cols-2">
         {projects.map(({ name, description, url, imgURL }) => (
           <a
             href={url}
