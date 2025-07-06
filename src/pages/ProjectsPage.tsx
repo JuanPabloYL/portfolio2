@@ -4,7 +4,7 @@ import { PortfolioProject } from "../types";
 const projects: PortfolioProject[] = [
   {
     name: "URL Shrinker",
-    url: "https://github.com/JuanPabloYL/url-shrinker",
+    url: "https://github.com/JuanPabloYL/url-shrink",
     description:
       "Project based in typescrupt using the apis to create the url shrinked.",
     imgURL: "./assets/img/project2.png",
